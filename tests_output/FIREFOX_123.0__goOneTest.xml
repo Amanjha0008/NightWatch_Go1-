@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="goOneTest"
+    errors="0" failures="0" hostname="" id="" package="goOneTest" skipped="0"
+    tests="2" time="20.49" timestamp="">
+  
+    <testcase name="Verify that the elements of HomePage are visible" classname="goOneTest" time="7.648" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verify &#34;Go1Percent&#34; logo, carousel images, carousel caption and the footer message (TC-337) - Version1" classname="goOneTest" time="0.7570" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

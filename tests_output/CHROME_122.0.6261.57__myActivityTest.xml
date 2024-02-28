@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="7">
+
+  <testsuite name="myActivityTest"
+    errors="0" failures="0" hostname="" id="" package="myActivityTest" skipped="0"
+    tests="7" time="10.81" timestamp="">
+  
+    <testcase name="Verify that the elements of LoginPage are visible" classname="myActivityTest" time="0.8610" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verify successful login with valid credentials (TC-344)" classname="myActivityTest" time="0.4760" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Verify user should be able to see all the activities on the My activity - Version1" classname="myActivityTest" time="0.2220" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Verify appropriate points should be added according to the contribution- Version1" classname="myActivityTest" time="0.1500" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Verify that the user can able to see the time the activity was done on all Activity. - Version1" classname="myActivityTest" time="1.566" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name=" Verify that the user can able to scroll down and see all the activities. - Version1" classname="myActivityTest" time="0.007000" assertions="0">
+    </testcase>
+  
+    <testcase name="Verify user should see Add a contribution button when no contribution has been added by the user - Version1" classname="myActivityTest" time="0.05400" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
