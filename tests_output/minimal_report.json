@@ -1,1 +1,8 @@
-{"modules":{"myActivityTest":{"modulePath":"/home/nashtech/Desktop/nwAdvance/tests/Dashboard/myActivityTest.js","status":"pass"}}}
+{
+  "modules": {
+    "dashboardMyActivityTest": {
+      "modulePath": "/home/nashtech/Desktop/nwAdvance/tests/Dashboard/dashboardMyActivityTest.js",
+      "status": "fail"
+    }
+  }
+}

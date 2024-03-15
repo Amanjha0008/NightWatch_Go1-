@@ -1,39 +1,44 @@
-const allureReporter = require('nightwatch-allure');
-const fs = require('fs');
-const logger = require('../tests/logger');
+const allureReporter = require("nightwatch-allure");
+const fs = require("fs");
+const logger = require("../helper/logger.js");
 
 module.exports = {
-    before: (done) => {
-        console.log('before');
-        done();
-    },
-    after: (done) => {
-        console.log('after');
-        done();
-    },
-    beforeEach: (browser , done) => {
-        console.log('before Each');
-        browser.status(result =>{
-            console.log(result.value)
-            done()
-        });
-    },
-    afterEach: (browser, done) => {
-        console.log('afterEach');
-       console.log(browser.currentTest);
-       done()
-    },
-
-    reporter: (results,done)=>{
+  user: "${USER_NAME}",
+  pass: "${PASSWORD}",
+  url: "${Base_url}",
+  before: (done) => {
+    logger.info("before");
+    done();
+  },
+  after: (done) => {
+    logger.info("after");
+    done();
+  },
+  beforeEach: (browser, done) => {
+    logger.info("before Each");
+    browser.status((result) => {
+      logger.info(result.value);
+      done();
+    });
+  },
+  afterEach: (browser, done) => {
+    logger.info("afterEach");
+    logger.info(browser.currentTest);
+    done();
+  },
+  reporter: (results, done) => {
     const reporter = new allureReporter.NightwatchAllureReporter({});
-    reporter.write(results,done);
-    },
+    reporter.write(results, done);
+  },
+  reporterJson: (results, done) => {
+    fs.writeFile(
+      "testresults.json",
+      JSON.stringify(results, null, "\t"),
+      (err) => {
+        if (err) throw err;
 
-    reporter: (results,done) => {
-        fs.writeFile('testresults.json', JSON.stringify(results, null, '\t'), (err) => {
-            if (err) throw err;
-
-            logger.info('report saved')
-        });
-    }
+        logger.info("report saved");
+      },
+    );
+  },
 };
