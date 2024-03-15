@@ -59,7 +59,8 @@ module.exports = logger;
 
 ```
 
-8. I create a "helper" for the printing operation inside this I created the "logger.js"
+8. I create a "helper" for the printing operation inside this I created the "logger.js".
+9. I used custom commands for the click operation where I need to use javascript Executor I defined the locator strategy for both the "xapth" and "css".
 
 ## Test Assert and Passed
 
