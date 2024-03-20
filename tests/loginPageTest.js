@@ -147,3 +147,5 @@ describe("Login Page Verification", () => {
       .assert.urlContains("/my-dashboard");
   });
 });
+
+.click()

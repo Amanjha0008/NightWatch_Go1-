@@ -211,3 +211,17 @@ info: 100 {"timestamp":"2024-03-15T18:04:15.634Z"}
 info: afterEach {"timestamp":"2024-03-15T18:04:21.856Z"}
 info: [object Object] {"timestamp":"2024-03-15T18:04:21.857Z"}
 info: after {"timestamp":"2024-03-15T18:04:22.046Z"}
+info: before {"timestamp":"2024-03-18T05:34:23.331Z"}
+info: before Each {"timestamp":"2024-03-18T05:34:46.450Z"}
+info: HTTP method not allowed {"timestamp":"2024-03-18T05:34:46.468Z"}
+info: Test Executed {"timestamp":"2024-03-18T05:34:47.687Z"}
+info: afterEach {"timestamp":"2024-03-18T05:34:52.913Z"}
+info: [object Object] {"timestamp":"2024-03-18T05:34:52.913Z"}
+info: after {"timestamp":"2024-03-18T05:34:59.837Z"}
+info: before {"timestamp":"2024-03-18T06:19:03.784Z"}
+info: before Each {"timestamp":"2024-03-18T06:19:04.712Z"}
+info: unknown command: unknown command: session/undefined/status {"error":"unknown command","stacktrace":"","timestamp":"2024-03-18T06:19:04.718Z"}
+info: Test Executed {"timestamp":"2024-03-18T06:19:08.215Z"}
+info: afterEach {"timestamp":"2024-03-18T06:19:13.583Z"}
+info: [object Object] {"timestamp":"2024-03-18T06:19:13.583Z"}
+info: after {"timestamp":"2024-03-18T06:19:13.779Z"}

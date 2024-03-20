@@ -5,9 +5,9 @@
 
   <testsuite name="loginPageTest"
     errors="0" failures="1" hostname="" id="" package="loginPageTest" skipped="12"
-    tests="1" time="14.24" timestamp="">
+    tests="1" time="11.69" timestamp="">
   
-    <testcase name="Verify that the elements of LoginPage are visible" classname="loginPageTest" time="5.368" assertions="1">  <failure message="Timed out while waiting for element &lt;.container-fluid&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5298ms)">    at DescribeInstance.&lt;anonymous&gt; (/home/nashtech/Desktop/nwAdvance/tests/loginPageTest.js:17:8)</failure>
+    <testcase name="Verify that the elements of LoginPage are visible" classname="loginPageTest" time="5.226" assertions="1">  <failure message="Timed out while waiting for element &lt;.container-fluid&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5156ms)">    at DescribeInstance.&lt;anonymous&gt; (/home/nashtech/Desktop/nwAdvance/tests/loginPageTest.js:17:8)</failure>
 
     
     </testcase>
