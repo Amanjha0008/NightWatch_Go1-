@@ -59,7 +59,7 @@ describe("Login Page Verification", () => {
       .waitForElementVisible("@signInText", 2000)
       .assert.visible("@signInText");
   });
-  it("Verify that clicking on the Microsoft logo redirects to the Microsoft login page (TC-342) - Version1", function (browser) {
+  it("Verify that clicking on the Microsoft logo redirects to the Microsoft login page (TC-342) - Version1", function () {
     loginPage
       .waitForElementVisible("@microsoftLogo", 10000)
       .execute(() => {
@@ -85,7 +85,7 @@ describe("Login Page Verification", () => {
       .to.be.selected.before(100);
   });
 
-  it("Verify the forgot Password functionality (TC-346) - Version1", async function (browser) {
+  it("Verify the forgot Password functionality (TC-346) - Version1", async function () {
     loginPage.waitForElementVisible("@forgetPass");
     await browser.execute(function () {
       const xpath = '//a[contains(text(), "Forgot Password?")]';
@@ -113,7 +113,7 @@ describe("Login Page Verification", () => {
     browser.back();
   });
 
-  it('Verify clicking on the "Terms of Use" link opens a new page with the terms of use ', function (browser) {
+  it('Verify clicking on the "Terms of Use" link opens a new page with the terms of use ', function () {
     browser
       .execute(() => {
         document.querySelector("div.term-privacy > a:nth-child(1)").click();
@@ -125,18 +125,18 @@ describe("Login Page Verification", () => {
         this.switchWindow(originalHandle);
       });
   });
-  it('Verify clicking on the "privacy Policy" link opens a new page with the terms of use ', function (browser) {
+  it('Verify clicking on the "privacy Policy" link opens a new page with the terms of use ', function () {
     loginPage.getTitle(function (title) {
       logger.info("Title:", title);
     });
     browser.execute(() => {
       document.querySelector("div.term-privacy > a:nth-child(2)").click();
     });
-    browser.windowHandles(function (result) {
+    browser.window.getAllHandles(function (result) {
       const originalHandle = result.value[0];
       const handle = result.value[2];
-      this.switchWindow(handle).assert.urlContains("/privacy-policy");
-      this.switchWindow(originalHandle);
+      this.window.switch(handle).assert.urlContains("/privacy-policy");
+      this.window.switch(originalHandle);
     });
   });
 

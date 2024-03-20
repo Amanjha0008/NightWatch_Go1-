@@ -26,7 +26,7 @@ describe("My Activity Verification", () => {
       .assert.urlContains("/my-dashboard");
   });
 
-  it("Verify user should be able to see all the activities on the My activity - Version1", async function (browser) {
+  it("Verify user should be able to see all the activities on the My activity - Version1", async function () {
     dashboardMyActivity.waitForElementVisible("body", 5000); // it will redirect me to my Activity Page
     await browser
       .execute(
@@ -34,7 +34,7 @@ describe("My Activity Verification", () => {
       )
       .assert.visible(".card.tab-card.py-5.px-4", "All activities is Visible");
   });
-  it("Extract text from all elements within the g-sidenav-show class", async function (browser) {
+  it("Extract text from all elements within the g-sidenav-show class", async function () {
     dashboardMyActivity
       .waitForElementVisible("@scoringBtn", 5000)
       .focusClick("css", ".nav-link.pe-0.text-white.font-weight-bolder", false)
