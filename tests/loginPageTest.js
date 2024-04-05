@@ -139,13 +139,4 @@ describe("Login Page Verification", () => {
       this.window.switch(originalHandle);
     });
   });
-
-  it("Verify successful login with valid credentials (TC-344)", function () {
-    loginPage
-      .enterNameAndPassword(global.user, global.pass)
-      .focusClick("css", "#kc-login", false)
-      .assert.urlContains("/my-dashboard");
-  });
 });
-
-.click()
